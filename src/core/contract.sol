@@ -14,7 +14,6 @@ contract CryptoGift {
     mapping(uint256 => Gift) public gifts;
     uint256 public giftCounter;
 
-    // Events for frontend
     event GiftSent(
         uint256 indexed giftId,
         address indexed from,
