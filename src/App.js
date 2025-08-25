@@ -19,7 +19,6 @@ function App() {
 
   const [sentGifts, setSentGifts] = useState([]);
   const [receivedGifts, setReceivedGifts] = useState([]);
-
   const [txHash, setTxHash] = useState('');
   const [copied, setCopied] = useState(false);
   const [error, setError] = useState('');
