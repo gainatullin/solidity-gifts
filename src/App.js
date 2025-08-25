@@ -2,12 +2,15 @@ import React, { useState, useEffect } from 'react';
 import { Gift, Send, Wallet, ExternalLink, Copy, Check, User, DollarSign } from 'lucide-react';
 import { SEPOLIA_CHAIN_ID, CONTRACT_ADDRESS, CONTRACT_ABI, formatEther, isAddress, parseEther } from "core/constants";
 
+
+
 function App() {
   const [account, setAccount] = useState('');
   const [web3, setWeb3] = useState(null);
   const [contract, setContract] = useState(null);
   const [loading, setLoading] = useState(false);
   const [web3Loading, setWeb3Loading] = useState(true);
+  
   const [activeTab, setActiveTab] = useState('send');
 
   const [recipient, setRecipient] = useState('');
